@@ -1,42 +1,37 @@
 //
-//  ViewController.m
+//  ViewControllerRegister.m
 //  HttpRequests
 //
-//  Created by hussien alrubaye on 2/7/16.
+//  Created by hussien alrubaye on 2/8/16.
 //  Copyright © 2016 hussien alrubaye. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "ViewControler2.h"
-@interface ViewController ()
+#import "ViewControllerRegister.h"
+
+@interface ViewControllerRegister ()
 @property (weak, nonatomic) IBOutlet UITextField *laUserName;
-@property (weak, nonatomic) IBOutlet UILabel *LAMessage;
 @property (weak, nonatomic) IBOutlet UITextField *LaPassword;
 
+@property (weak, nonatomic) IBOutlet UILabel *LaMessage;
+@property (weak, nonatomic) IBOutlet UITextField *LaEmail;
 @end
 
-@implementation ViewController
+@implementation ViewControllerRegister
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //  self.searchBar.delegate   = self;
-   // self.tableView.dataSource = self;
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)buClick:(id)sender {
-   
+- (IBAction)Register:(id)sender {
     [self httpRequest];
- 
-   
 }
-
-
 -(void)httpRequest{
-    NSString *myurl=[NSString stringWithFormat:@"http://selling.alruabye.net/UsersWS.asmx/Login?UserName=%@&Password=%@",_laUserName.text, _LaPassword.text];
+    NSString *myurl=[NSString stringWithFormat:@"http://selling.alruabye.net/UsersWS.asmx/Register?UserName=%@&Password=%@&Email=%@&PhoneNumber=4646&Logtit=11.5&Latitle=12.5",_laUserName.text, _LaPassword.text,_LaEmail.text];
     NSURL *URL = [NSURL URLWithString:myurl];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
@@ -49,23 +44,26 @@
                                       //calll interface
                                       dispatch_async(dispatch_get_main_queue(), ^{
                                           NSString *Message=  [parsedObject objectForKey:@"Message"] ;
-                                          if (Message.length>0 ) {
-                                              _LAMessage.text=Message;}
-                                          else{
-                                              ViewControler2 *monitorMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewControler2"];
-                                              [self presentViewController:monitorMenuViewController animated:NO completion:nil];
-                                              
-                                          }
+                                       
+                                           _LaMessage.text=Message;
+                                          
                                       });
                                       
-                     
-
+                                      
+                                      
                                   }];
-                       [task resume];
-  
-
+    [task resume];
+    
+    
 }
+/*
+#pragma mark - Navigation
 
-
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

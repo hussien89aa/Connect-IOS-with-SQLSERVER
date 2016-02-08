@@ -15,6 +15,10 @@
 		C74DE3EC1C67EFBC000ADB20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74DE3EA1C67EFBC000ADB20 /* LaunchScreen.storyboard */; };
 		C74DE3F71C67EFBC000ADB20 /* HttpRequestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DE3F61C67EFBC000ADB20 /* HttpRequestsTests.m */; };
 		C74DE4021C67EFBC000ADB20 /* HttpRequestsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DE4011C67EFBC000ADB20 /* HttpRequestsUITests.m */; };
+		C74DE4111C67F853000ADB20 /* File.json in Resources */ = {isa = PBXBuildFile; fileRef = C74DE4101C67F853000ADB20 /* File.json */; };
+		C74DE4961C6866F1000ADB20 /* ViewControler2.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DE4951C6866F1000ADB20 /* ViewControler2.m */; };
+		C74DE4981C68F6A0000ADB20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C74DE4971C68F6A0000ADB20 /* Default-568h@2x.png */; };
+		C74DE49B1C68FCED000ADB20 /* ViewControllerRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DE49A1C68FCED000ADB20 /* ViewControllerRegister.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		C74DE3FD1C67EFBC000ADB20 /* HttpRequestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpRequestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74DE4011C67EFBC000ADB20 /* HttpRequestsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequestsUITests.m; sourceTree = "<group>"; };
 		C74DE4031C67EFBC000ADB20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74DE4101C67F853000ADB20 /* File.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = File.json; path = ../File.json; sourceTree = "<group>"; };
+		C74DE4941C6866F1000ADB20 /* ViewControler2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControler2.h; sourceTree = "<group>"; };
+		C74DE4951C6866F1000ADB20 /* ViewControler2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControler2.m; sourceTree = "<group>"; };
+		C74DE4971C68F6A0000ADB20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C74DE4991C68FCED000ADB20 /* ViewControllerRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegister.h; sourceTree = "<group>"; };
+		C74DE49A1C68FCED000ADB20 /* ViewControllerRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegister.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,7 @@
 		C74DE3D01C67EFBC000ADB20 = {
 			isa = PBXGroup;
 			children = (
+				C74DE4971C68F6A0000ADB20 /* Default-568h@2x.png */,
 				C74DE3DB1C67EFBC000ADB20 /* HttpRequests */,
 				C74DE3F51C67EFBC000ADB20 /* HttpRequestsTests */,
 				C74DE4001C67EFBC000ADB20 /* HttpRequestsUITests */,
@@ -110,6 +121,10 @@
 				C74DE3EA1C67EFBC000ADB20 /* LaunchScreen.storyboard */,
 				C74DE3ED1C67EFBC000ADB20 /* Info.plist */,
 				C74DE3DC1C67EFBC000ADB20 /* Supporting Files */,
+				C74DE4941C6866F1000ADB20 /* ViewControler2.h */,
+				C74DE4951C6866F1000ADB20 /* ViewControler2.m */,
+				C74DE4991C68FCED000ADB20 /* ViewControllerRegister.h */,
+				C74DE49A1C68FCED000ADB20 /* ViewControllerRegister.m */,
 			);
 			path = HttpRequests;
 			sourceTree = "<group>";
@@ -117,6 +132,7 @@
 		C74DE3DC1C67EFBC000ADB20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C74DE4101C67F853000ADB20 /* File.json */,
 				C74DE3DD1C67EFBC000ADB20 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -244,7 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C74DE3EC1C67EFBC000ADB20 /* LaunchScreen.storyboard in Resources */,
+				C74DE4111C67F853000ADB20 /* File.json in Resources */,
 				C74DE3E91C67EFBC000ADB20 /* Assets.xcassets in Resources */,
+				C74DE4981C68F6A0000ADB20 /* Default-568h@2x.png in Resources */,
 				C74DE3E71C67EFBC000ADB20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74DE4961C6866F1000ADB20 /* ViewControler2.m in Sources */,
 				C74DE3E41C67EFBC000ADB20 /* ViewController.m in Sources */,
 				C74DE3E11C67EFBC000ADB20 /* AppDelegate.m in Sources */,
+				C74DE49B1C68FCED000ADB20 /* ViewControllerRegister.m in Sources */,
 				C74DE3DE1C67EFBC000ADB20 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +516,7 @@
 				C74DE4081C67EFBC000ADB20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C74DE4091C67EFBC000ADB20 /* Build configuration list for PBXNativeTarget "HttpRequestsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				C74DE40B1C67EFBC000ADB20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C74DE40C1C67EFBC000ADB20 /* Build configuration list for PBXNativeTarget "HttpRequestsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				C74DE40E1C67EFBC000ADB20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
